@@ -182,6 +182,7 @@ async def play_tg_file(c: Client, m: Message, replied: Message = None, link: str
 
 
 @Client.on_message(command(["vplay", f"vplay@{BOT_USERNAME}"]) & other_filters)
+@authorized_users_only
 @check_blacklist()
 @require_admin(permissions=["can_manage_voice_chats", "can_delete_messages", "can_invite_users"], self=True)
 async def vplay(c: Client, m: Message):
