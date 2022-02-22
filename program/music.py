@@ -14,7 +14,7 @@ from pytgcalls import StreamType
 from pytgcalls.types.input_stream import AudioPiped
 from pytgcalls.types.input_stream.quality import HighQualityAudio
 # repository stuff
-from driver.decorators import require_admin, check_blacklist
+from driver.decorators import authorized_users_only, require_admin, check_blacklist
 from program.utils.inline import stream_markup
 from driver.design.thumbnail import thumb
 from driver.design.chatname import CHAT_TITLE
