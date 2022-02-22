@@ -8,7 +8,7 @@ import asyncio
 import traceback
 # repository stuff
 from config import BOT_USERNAME, IMG_1, IMG_2, IMG_5
-from driver.decorators import require_admin, check_blacklist
+from driver.decorators import authorized_users_only, require_admin, check_blacklist
 from program.utils.inline import stream_markup
 from driver.design.thumbnail import thumb
 from driver.design.chatname import CHAT_TITLE
