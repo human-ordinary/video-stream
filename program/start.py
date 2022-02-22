@@ -91,7 +91,7 @@ async def start_(c: Client, message: Message):
                 ],
                 [
                     InlineKeyboardButton(
-                        "🌐 Source Code", url="https://google.com"
+                        "🌐 Source Code", url="https://www.google.com/"
                     )
                 ],
             ]
